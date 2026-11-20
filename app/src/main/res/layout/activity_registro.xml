@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo Reporte en Terreno"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título de la incidencia *"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: Luminaria apagada en esquina"
+            android:inputType="textCapSentences"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría *"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción detallada *"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe el problema de seguridad o accesibilidad"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvFechaHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha y hora: --"
+            android:textColor="#37474F"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvEstadoInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado inicial: Pendiente"
+            android:textColor="#37474F"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E3F2FD"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tvSensorLuz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sensor de luminosidad: leyendo..."
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubicación GPS: solicitando permiso..."
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnActualizarUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reintentar captura GPS"
+                android:backgroundTint="#1976D2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGuardarReporte"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Guardar Reporte en Firestore"
+            android:textSize="16sp"
+            android:backgroundTint="#2E7D32" />
+
+    </LinearLayout>
+</ScrollView>
