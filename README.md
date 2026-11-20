@@ -22,7 +22,7 @@
 
 ---
 
-## 🛠️ Instrucciones de Compilación y Configuración
+##  Instrucciones de Compilación y Configuración
 
 ### Prerrequisitos
 - **Android Studio** (Ladybug, Koala o versión más reciente recomendada).
