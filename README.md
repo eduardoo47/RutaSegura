@@ -46,7 +46,7 @@
 
 4. **Ejecutar la aplicación**:
    - Conecta un dispositivo Android físico o inicia un emulador con soporte de Google APIs.
-   - Haz clic en el botón **Run 'app'** (▶) en Android Studio o ejecuta mediante terminal:
+   - Haz clic en el botón **Run 'app'** en Android Studio o ejecuta mediante terminal:
      ```bash
      ./gradlew assembleDebug
      ```
