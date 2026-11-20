@@ -1,24 +1,9 @@
-# 🛡️ RutaSegura
+#  RutaSegura
 
 **RutaSegura** es una aplicación móvil desarrollada para Android orientada al registro, monitoreo comunitario y gestión de incidencias de seguridad y accesibilidad urbana. Permite a los ciudadanos reportar problemas en la vía pública (luminarias apagadas, baches, obstrucciones, zonas inseguras), visualizar reportes en un listado detallado y consultarlos geográficamente en un mapa interactivo.
 
----
 
-## 📱 Capturas de Pantalla
-
-| Pantalla Principal | Registro de Incidencia |
-| :---: | :---: |
-| ![Pantalla Principal](docs/screenshots/main.png) | ![Registro](docs/screenshots/registro.png) |
-| *Menú de navegación principal* | *Formulario de nuevo reporte con GPS y Sensor Lux* |
-
-| Listado de Reportes | Mapa de Incidencias |
-| :---: | :---: |
-| ![Listado](docs/screenshots/listado.png) | ![Mapa](docs/screenshots/mapa.png) |
-| *Vista en tarjeta de incidencias reportadas* | *Geolocalización interactiva de reportes* |
-
----
-
-## ✨ Funcionalidades Principales
+##  Funcionalidades Principales
 
 1. **Pantalla Principal (`MainActivity`)**:
    - Acceso rápido a las tres secciones principales de la aplicación: Registro de Reportes, Listado y Mapa de Incidencias.
@@ -68,7 +53,7 @@
 
 ---
 
-## ⚠️ Limitaciones
+##  Limitaciones
 
 - **Servicios de Google Play**: Requiere un entorno con Google Play Services instalado para el funcionamiento del mapa y servicios de ubicación.
 - **Sensor de Luz Ambiental**: La lectura del sensor de luminosidad depende estrictamente del hardware del dispositivo físico. En emuladores estándar puede retornar `0.0 lx` a menos que se simulen sensores mediante herramientas de emulación.
@@ -76,7 +61,7 @@
 
 ---
 
-## 🧪 Evidencias de Pruebas
+##  Evidencias de Pruebas
 
 - **Pruebas Unitarias (`ExampleUnitTest`)**: Verificación de lógica básica de negocio.
 - **Pruebas Instrumentadas (`ExampleInstrumentedTest`)**: Verificación del entorno de ejecución en Android y contexto de la aplicación.
